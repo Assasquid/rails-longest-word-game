@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  root to: "pages#new"
-  get "new", to: "pages#new"
-  get "score", to: "pages#score"
+  get 'new', to: 'games#new'
+  get 'score', to: 'games#score'
 end

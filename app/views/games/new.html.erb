@@ -1,0 +1,16 @@
+<ul class="letters">
+  <% @letters.each do |letter| %>
+    <li><%= letter.upcase %></li>
+  <% end %>
+</ul>
+
+<div class="form-container">
+  <form class="input" action="TODO" method="TODO" data-turbo="false">
+    <div class="input-zone">
+      <input class="input-field" type="text" name="guess" id="guess" required>
+    </div>
+    <div>
+      <input class="submit-button" type="submit" value="Submit!">
+    </div>
+  </form>
+</div>
